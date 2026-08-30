@@ -10,7 +10,7 @@ export default defineNuxtConfig({
       apiBase: '/api',
     },
   },
-  css: ['~/assets/css/testCssProperty.css'],
+  css: ['~/assets/css/testCssProperty.css', '~/assets/scss/main.scss'],
   // app: {
   //   head: {
   //     link: [{
@@ -18,6 +18,21 @@ export default defineNuxtConfig({
   //     }]
   //   }
   // }
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/scss/_colors.scss" as *;',
+        },
+      },
+    },
+  },
+  postcss: {
+    plugins: {
+      'postcss-nested': {},
+      "postcss-custom-media": {}
+    }
+  }
 
 
 })

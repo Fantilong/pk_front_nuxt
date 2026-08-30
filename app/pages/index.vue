@@ -7,8 +7,20 @@
 
 
      <div class="test-css">test-css</div>
+     <div class="test-css-1">test-css-1</div>
+     <div class="test-css-2">test-css-2</div>
 
      <h1 class="animate__animated animate__bounce">An animated element</h1>
+
+     <div class="content">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+     </div>
 </template>
 
 <script lang="ts" setup>
@@ -44,6 +56,31 @@ useHead({
 })
 
 
-
+const color = ref('blue')
 
 </script>
+
+
+<style lang="scss">
+.test-css-2 {
+  color: v-bind(color)
+}
+
+.content {
+  width: 100px;
+  height: 100px;
+  background-color: darkblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .item{
+    width: 20px;
+    height: 20px;
+    background-color: darkcyan;
+  }
+}
+
+
+  
+</style>
