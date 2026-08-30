@@ -10,5 +10,14 @@ export default defineNuxtConfig({
       apiBase: '/api',
     },
   },
-  css: ['~/assets/css/testCssProperty.css']
+  css: ['~/assets/css/testCssProperty.css'],
+  // app: {
+  //   head: {
+  //     link: [{
+  //       rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' 
+  //     }]
+  //   }
+  // }
+
+
 })

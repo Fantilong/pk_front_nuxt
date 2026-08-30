@@ -7,9 +7,13 @@
 
 
      <div class="test-css">test-css</div>
+
+     <h1 class="animate__animated animate__bounce">An animated element</h1>
 </template>
 
 <script lang="ts" setup>
+// import 'animate.css'
+
 // const runtimeConfig = useRuntimeConfig()
 
 // console.log('runtimeConfig', runtimeConfig);
@@ -34,6 +38,10 @@ async function getImageUrl (name: string) {
 
 const imgUrl = (await getImageUrl('画板备份 8'))
 
+
+useHead({
+  link: [{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }],
+})
 
 
 
