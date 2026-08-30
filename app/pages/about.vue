@@ -1,6 +1,8 @@
 <template>
     <div>
         this is pages/about.vue
+             <div class="test-css">test-css</div>
+
     </div>
 </template>
 

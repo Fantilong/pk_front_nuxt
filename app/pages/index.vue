@@ -4,6 +4,9 @@
     <!-- <img src="/img/画板备份 9.png" alt=""> -->
     <!-- <img src="~/assets/img/画板备份 8.png" alt="" srcset=""> -->
      <img :src="imgUrl" alt="" srcset="">
+
+
+     <div class="test-css">test-css</div>
 </template>
 
 <script lang="ts" setup>

@@ -10,4 +10,5 @@ export default defineNuxtConfig({
       apiBase: '/api',
     },
   },
+  css: ['~/assets/css/testCssProperty.css']
 })
