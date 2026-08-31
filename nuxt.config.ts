@@ -11,13 +11,17 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/testCssProperty.css', '~/assets/scss/main.scss'],
-  // app: {
-  //   head: {
-  //     link: [{
-  //       rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' 
-  //     }]
-  //   }
-  // }
+  app: {
+    head: {
+      // link: [{
+      //   rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' 
+      // }]
+      title: 'Nuxt Page',
+      htmlAttrs: {
+        lang: 'en'
+      },
+    }
+  },
   vite: {
     css: {
       preprocessorOptions: {
