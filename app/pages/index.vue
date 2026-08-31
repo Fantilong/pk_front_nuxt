@@ -68,18 +68,23 @@ const color = ref('blue')
 // })
 
 
+const description = ref('这是一个description')
+
 useHead({
-  title: 'My App'
+  title: 'My App',
+  meta: [
+    {name: 'description', content: description}
+  ]
 })
 
-useSeoMeta({
-  title: 'My Amazing Site',
-  ogTitle: 'My Amazing Site',
-  description: 'This is my amazing site, let me tell you all about it.',
-  ogDescription: 'This is my amazing site, let me tell you all about it.',
-  ogImage: 'https://example.com/image.png',
-  twitterCard: 'summary_large_image',
-})
+// useSeoMeta({
+//   title: 'My Amazing Site',
+//   ogTitle: 'My Amazing Site',
+//   description: 'This is my amazing site, let me tell you all about it.',
+//   ogDescription: 'This is my amazing site, let me tell you all about it.',
+//   ogImage: 'https://example.com/image.png',
+//   twitterCard: 'summary_large_image',
+// })
 
 
 </script>
