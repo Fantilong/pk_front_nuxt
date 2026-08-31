@@ -68,6 +68,10 @@ const color = ref('blue')
 // })
 
 
+useHead({
+  title: 'My App'
+})
+
 
 
 </script>
