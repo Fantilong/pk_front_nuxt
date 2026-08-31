@@ -50,13 +50,23 @@ async function getImageUrl (name: string) {
 
 const imgUrl = (await getImageUrl('画板备份 8'))
 
-
 useHead({
   link: [{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }],
 })
 
 
 const color = ref('blue')
+
+
+// definePageMeta({
+//   middleware: (to, form) => {
+
+//   },
+//   validate(route) {
+//     return false
+//   },
+// })
+
 
 </script>
 
