@@ -1,4 +1,6 @@
 <template>
+  <div class="home-page">
+
    <div class="h1">helloe nuxt</div>
     <AppAlert name="画板备份 9">his is an auto-imported component.</AppAlert>
     <!-- <img src="/img/画板备份 9.png" alt=""> -->
@@ -21,6 +23,8 @@
       <div class="item">6</div>
       <div class="item">7</div>
      </div>
+  </div>
+
 </template>
 
 <script lang="ts" setup>

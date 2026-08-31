@@ -1,5 +1,5 @@
 <template>
-    <div >
+    <div class="posts-id-page">
         this id posts/[id].vue
         {{ route.params.id }}
     </div>
@@ -14,5 +14,9 @@ const route = useRoute()
 </script>
 
 <style scoped>
+
+.posts-id-page {
+    background-color: darkcyan;
+}
 
 </style>

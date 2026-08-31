@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="about-page">
         this is pages/about.vue
              <div class="test-css">test-css</div>
 
@@ -8,8 +8,18 @@
 
 <script setup lang="ts">
 
+definePageMeta({
+    pageTransition: {
+        name: 'rotate'
+    }
+})
+
 </script>
 
 <style scoped>
+
+.about-page {
+    background-color: darkblue;
+}
 
 </style>
