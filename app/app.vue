@@ -11,6 +11,14 @@
     </Head>
   <div class="app">
     this is app.vue
+    {{ counter }}
+    <button @click="counter++">
+      +
+    </button>
+    <button @click="counter--">
+      -
+    </button>
+
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
@@ -20,6 +28,11 @@
 <script lang="ts" setup>
 
 const title = ref('Hello World')
+
+
+const counter = useState('counter', () => {
+  return Math.round(Math.random() * 1000)
+});
 
 
 </script>

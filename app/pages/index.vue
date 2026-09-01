@@ -14,6 +14,8 @@
 
      <h1 class="animate__animated animate__bounce">An animated element</h1>
 
+    <div class="counter"> {{ counter }}</div>
+
      <div class="content">
       <div class="item">1</div>
       <div class="item">2</div>
@@ -89,6 +91,8 @@ useHead({
 //   ogImage: 'https://example.com/image.png',
 //   twitterCard: 'summary_large_image',
 // })
+
+ const counter = useState('counter');
 
 
 </script>
